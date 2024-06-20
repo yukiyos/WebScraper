@@ -41,11 +41,9 @@ for url in urls:
         
         # Extract company name
         company = soup.find('h1', class_='mb-2.5 text-left text-xl font-bold leading-7 text-[#232526] md:mb-2 md:text-3xl md:leading-8 rtl:soft-ltr').text
-        # company = soup.find('h1', class_='mb-2.5 text-left text-xl font-bold leading-7 text-[#232526] md:mb-2 md:text-3xl md:leading-8 rtl:soft-ltr').text
 
         # Extract price
         price = soup.find('div', class_= 'text-5xl/9 font-bold text-[#232526] md:text-[42px] md:leading-[60px]').text
-        # price = soup.find('div', class_='instrument-price_instrument-price__xfgbB flex items-end flex-wrap font-bold').find_all('span')[0].text
         
         # Extract price change
         # change = soup.find('div', class_='instrument-price_instrument-price__xfgbB flex items-end flex-wrap font-bold').find_all('span')[2].text
